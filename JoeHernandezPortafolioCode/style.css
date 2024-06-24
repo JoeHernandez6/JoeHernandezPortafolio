@@ -1,0 +1,138 @@
+/*start of navigation css*/
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: wheat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: beige;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    color: black;
+}
+nav a:hover{
+    background-color: white;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar ul{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height:100vh;
+    width:250px;
+    z-index: 999;
+    background-color: rgba(245, 245, 220, 0.452);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0, 0, 0.1);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width:100%;
+}
+.menu-button{
+    display:none;
+}
+.sidebar a{
+    width:100%}
+.homeIntro img{
+    display:none;
+    visibility:hidden;
+}
+@media screen and (min-width: 399px) and (max-width: 800px) {
+    .hideOnMobile{
+        display:none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .homeIntro{
+        display: flex;
+        align-items: center;
+        margin-top: 2%;
+    }
+    .homeIntro img{
+        display: block;
+        visibility: visible;
+        width:25%;
+        height:auto;
+        border-radius: 50%;
+    }
+    .homeIntro div{
+        margin-left: 5%;
+        text-align: center;
+        width:70%;
+    }
+}
+@media(max-width: 400px){
+    .hideOnMobile{
+        display:none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .sidebar ul{
+        width: 100%;
+    }
+    .homeIntro{
+        text-align: center;
+        transform: translateY(10%);
+    }
+    .homeIntro img{
+        display: block;
+        visibility:visible;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+        width: 50%;
+        height: auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+    }
+    .homeIntro img:hover {
+        transform: scale(1.1);
+      }
+      .Experience {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10%; /* Adjust as needed */
+      }
+    .box {
+        border: 2px solid #000; /* Black border */
+        padding: 10px;
+        margin: 10px;
+        width:90%;
+        display: inline-block; /* Display boxes in a line */
+        text-align: center;
+        background-color: beige;
+      }
+}
+/* End of navigation css */
