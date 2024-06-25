@@ -1,9 +1,11 @@
+
 @media(max-width: 400px){
+    .contactMe{
+        text-align: center;
+    }
     .contactMe img{
         display: block;
         visibility:visible;
-        margin-top: 5%;
-        margin-bottom: 5%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2%;
@@ -15,11 +17,11 @@
         border-style:solid;
         border-width:5px;
     }
-    .contactMe{
-        text-align: center;
-    }
+    
     .contactMe h1{
         margin-top:5%;
         background-color: beige;
     }
-}
+    .footer{
+        margin-top: 20%;
+    }}
