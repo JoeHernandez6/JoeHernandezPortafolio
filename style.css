@@ -93,8 +93,45 @@ nav li:first-child{
     text-decoration: none;
 
 }
+@media (min-width:801px){
 
-@media screen and (min-width: 399px) and (max-width: 800px) {
+    .homeIntro{
+        display: flex;
+        align-items: center;
+        margin-top: 2%;
+    }
+    .homeIntro img{
+        display: block;
+        visibility: visible;
+        margin-left: 2%;
+        width:25%;
+        height:auto;
+        border-radius: 50%;
+    }
+    .homeIntro h1{
+        font-size: 48px;
+        background-color: beige;
+        margin-bottom: 5%;
+    }
+    .homeIntro div{
+        margin-left: 5%;
+        text-align: center;
+        width:70%;
+    }
+    .box{
+        width:40%;
+        margin-left: 4%;
+        margin-left:4%;
+    }
+    .Experience{
+        display:block;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 800px) {
     .hideOnMobile{
         display:none;
     }
@@ -119,8 +156,12 @@ nav li:first-child{
         text-align: center;
         width:70%;
     }
+    .homeIntro h1{
+        font-size: 24px;
+        background-color: beige;
+    }
 }
-@media(max-width: 400px){
+@media(max-width: 450px){
     .hideOnMobile{
         display:none;
     }
@@ -154,5 +195,9 @@ nav li:first-child{
         flex-wrap: wrap;
         margin-top: 10%; /* Adjust as needed */
       }
+      .WhomeIntro h1{
+        font-size: 24px;
+        background-color: beige;
+    }
 }
 /* End of navigation css */
